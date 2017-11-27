@@ -117,8 +117,20 @@
     <repositories>
         <repository>
             <id>central</id>
-            <url>http://nexus.dev.8dol.com/nexus/content/groups/public</url>
+            <url>http://127.0.0.1:9999/nexus/content/groups/public</url>
         </repository>
     </repositories>
-</project>
 
+    <distributionManagement>
+        <repository>
+            <id>releases_local</id>
+            <name>Releases</name>
+            <url>http://127.0.0.1:9999/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots_local</id>
+            <name>Snapshots</name>
+            <url>http://127.0.0.1:9999/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
