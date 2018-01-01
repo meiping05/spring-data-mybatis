@@ -127,7 +127,6 @@
         </pluginManagement>
 
 
-
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -173,7 +172,7 @@
     <repositories>
         <repository>
             <id>central</id>
-            <url>http://127.0.0.1:9999/nexus/content/groups/public</url>
+            <url>http://localhost:9999/repository/maven-central/</url>
         </repository>
     </repositories>
 
@@ -181,12 +180,12 @@
         <repository>
             <id>releases_local</id>
             <name>Releases</name>
-            <url>http://127.0.0.1:9999/nexus/content/repositories/releases/</url>
+            <url>http://localhost:9999/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>snapshots_local</id>
             <name>Snapshots</name>
-            <url>http://127.0.0.1:9999/nexus/content/repositories/snapshots</url>
+            <url>http://localhost:9999/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
